@@ -33,27 +33,112 @@ header p {
     margin: 10px 0 0;
 }
 
-nav ul {
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background: #333;
+    text-align: center;
+    padding: 0 0;
+    font-family: Arial;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Navbar links*/
+
+.navbar ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 10px 0 0;
 }
 
-nav ul li {
+.navbar ul li {
     display: inline;
     margin: 0 15px;
+
 }
 
-nav ul li a {
-    color: #fff;
+.navbar ul li a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */ 
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: #333;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: #54664;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: red
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
 /* Section Styles */
 .section {
     padding: 20px 0;
-    background: #f8f5f5;
+    background: hwb(0 100% 0%);
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
